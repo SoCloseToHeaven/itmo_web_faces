@@ -3,6 +3,7 @@ package ru.ifmo.soclosetoheaven.util
 import org.hibernate.Session
 import org.hibernate.SessionFactory
 import org.hibernate.cfg.Configuration
+import ru.ifmo.soclosetoheaven.model.ProcessedPoint
 
 object HibernateUtils {
 
@@ -15,7 +16,9 @@ object HibernateUtils {
 
     private fun configure() {
         try {
-            val configuration = Configuration().configure("hibernate.cfg.xml")
+            val configuration = Configuration()
+                .configure("hibernate.cfg.xml")
+                .addAnnotatedClass(ProcessedPoint::class.java)
             sessionFactory = configuration.buildSessionFactory()
         } catch (ex: Throwable) {
             throw ExceptionInInitializerError(ex)

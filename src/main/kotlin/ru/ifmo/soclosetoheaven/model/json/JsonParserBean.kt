@@ -2,9 +2,11 @@ package ru.ifmo.soclosetoheaven.model.json
 
 import com.google.gson.Gson
 import jakarta.enterprise.context.ApplicationScoped
+import jakarta.inject.Named
 
 
 @ApplicationScoped
+@Named
 class JsonParserBean {
 
     private val gson = Gson()

@@ -10,20 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecbb3e6f-1473-4f46-a946-ccc63df15c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/AttemptsServlet.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/Point.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/ProcessedPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/ProcessedPoint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/json/JsonParserBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/json/JsonParserBean.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/managers/PointManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/managers/PointManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/util/HibernateUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/util/HibernateUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +35,9 @@
       <list>
         <option value="jsf" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Kotlin Object" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -60,6 +60,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.quicklists&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -71,6 +72,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Дмитрий\Desktop\ИТМО\Web\itmo_web_faces\src\main\kotlin\ru\ifmo\soclosetoheaven\model" />
+      <recent name="C:\Users\Дмитрий\Desktop\ИТМО\Web\itmo_web_faces\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Дмитрий\Desktop\ИТМО\Web\itmo_web_faces\src\main\resources" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
@@ -81,20 +84,54 @@
   <component name="RunManager">
     <configuration name="JBoss/WildFly 29.0.1.Final1" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 29.0.1.Final1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:38889/soclosetoheaven-1.0-SNAPSHOT" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="soclosetoheaven:war exploded">
           <settings />
         </artifact>
       </deployment>
       <server-settings>
-        <option name="SERVER" value="" />
+        <option name="SERVER" />
         <option name="BINDING_SET_NAME" value="" />
         <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
+        <option name="SERVER_GROUP" value="main-server-group" />
         <option name="USERNAME" value="" />
         <option name="CREDENTIAL_ALIAS" />
       </server-settings>
       <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56891" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -130,7 +167,17 @@
       <workItem from="1697133696346" duration="3189000" />
       <workItem from="1697912383716" duration="3932000" />
       <workItem from="1697922971922" duration="6786000" />
-      <workItem from="1698086846132" duration="8937000" />
+      <workItem from="1698086846132" duration="9286000" />
+      <workItem from="1698227308432" duration="1891000" />
+      <workItem from="1698229644154" duration="18975000" />
+      <workItem from="1698312320547" duration="7339000" />
+      <workItem from="1698348832351" duration="57000" />
+      <workItem from="1698348905708" duration="90000" />
+      <workItem from="1698349025557" duration="4900000" />
+      <workItem from="1698398128408" duration="7161000" />
+      <workItem from="1698483514480" duration="4324000" />
+      <workItem from="1698488928850" duration="2068000" />
+      <workItem from="1698510206589" duration="2314000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,12 @@
 package ru.ifmo.soclosetoheaven.model.managers
 
 
+import jakarta.annotation.ManagedBean
 import jakarta.annotation.PostConstruct
 import jakarta.annotation.PreDestroy
 import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.context.SessionScoped
+import jakarta.inject.Named
 import org.hibernate.Session
 
 import ru.ifmo.soclosetoheaven.model.ProcessedPoint
@@ -15,24 +17,36 @@ import kotlin.collections.ArrayList
 
 
 @SessionScoped
+@Named
 class PointManager : Manager<ProcessedPoint, Unit>, Serializable {
 
     private val session: Session = HibernateUtils.getSession()
 
-    private val data = ArrayList<ProcessedPoint>()
+    val data = ArrayList<ProcessedPoint>()
 
     override fun manage(arg: ProcessedPoint) {
-        session.transaction.begin()
+        val transaction = session.beginTransaction()
         session.persist(arg)
-        session.transaction.commit()
+        transaction.commit()
         data.add(arg)
+    }
+
+
+    fun clear() {
+        val transaction = session.beginTransaction()
+        session.createQuery("DELETE FROM POINTS").executeUpdate()
+        transaction.commit()
+        data.clear()
     }
 
     @PostConstruct
     fun init() {
-        data.addAll(
-            session.createQuery("SELECT a FROM POINTS a", ProcessedPoint::class.java).resultList
-        )
+        try {
+            data.addAll(
+                session.createQuery("SELECT a FROM POINTS a", ProcessedPoint::class.java).resultList
+            )
+        } catch (ex: Throwable) {
+        }
     }
 
     @PreDestroy
