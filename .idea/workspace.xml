@@ -10,20 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecbb3e6f-1473-4f46-a946-ccc63df15c8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/AttemptsServlet.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/Point.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/Point.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/ProcessedPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/ProcessedPoint.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/json/JsonParserBean.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/json/JsonParserBean.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/managers/PointManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/model/managers/PointManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/util/HibernateUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/util/HibernateUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/check.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +23,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="jsf" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
         <option value="Class" />
+        <option value="jsf" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -177,7 +167,9 @@
       <workItem from="1698398128408" duration="7161000" />
       <workItem from="1698483514480" duration="4324000" />
       <workItem from="1698488928850" duration="2068000" />
-      <workItem from="1698510206589" duration="2314000" />
+      <workItem from="1698510206589" duration="3567000" />
+      <workItem from="1698527894906" duration="6958000" />
+      <workItem from="1698592712673" duration="1251000" />
     </task>
     <servers />
   </component>

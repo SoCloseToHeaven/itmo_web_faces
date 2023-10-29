@@ -142,6 +142,5 @@ canvas.addEventListener('mousedown', (ev) => {
     document.getElementById('point-form:y').value = y.toString();
     console.log(document.getElementById('point-form:x-number').value);
     console.log(document.getElementById('point-form:y').value);
-    // Apparently the button re-renders somehow, can't keep a global reference to the button.
     document.getElementById("point-form:send-button").click();
 });
