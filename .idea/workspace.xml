@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecbb3e6f-1473-4f46-a946-ccc63df15c8a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/check.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Rectangle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Triangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Triangle.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +170,8 @@
       <workItem from="1698488928850" duration="2068000" />
       <workItem from="1698510206589" duration="3567000" />
       <workItem from="1698527894906" duration="6958000" />
-      <workItem from="1698592712673" duration="1251000" />
+      <workItem from="1698592712673" duration="2172000" />
+      <workItem from="1698613036758" duration="1423000" />
     </task>
     <servers />
   </component>
