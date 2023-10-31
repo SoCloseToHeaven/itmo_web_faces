@@ -11,10 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ecbb3e6f-1473-4f46-a946-ccc63df15c8a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Circle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Rectangle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Triangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ru/ifmo/soclosetoheaven/areas/Triangle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/graph.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2WdE8mFybo4BrHlJmdozwuKbhFl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -171,7 +170,12 @@
       <workItem from="1698510206589" duration="3567000" />
       <workItem from="1698527894906" duration="6958000" />
       <workItem from="1698592712673" duration="2172000" />
-      <workItem from="1698613036758" duration="1423000" />
+      <workItem from="1698613036758" duration="2120000" />
+      <workItem from="1698667879136" duration="162000" />
+      <workItem from="1698668932652" duration="156000" />
+      <workItem from="1698741917147" duration="60000" />
+      <workItem from="1698741997415" duration="559000" />
+      <workItem from="1698743497361" duration="195000" />
     </task>
     <servers />
   </component>
