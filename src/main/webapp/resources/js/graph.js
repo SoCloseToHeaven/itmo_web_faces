@@ -1,3 +1,22 @@
+function inZone(x, y, r) {
+    const inThirdQuarter = (x <= 0 && y <= 0)
+    const inCircle = (x * x + y * y) <= (r) * (r)
+    const inThirdZone = inThirdQuarter && inCircle
+
+    const inSecondQuarter = x <= 0 && y >= 0
+    const inRectangle = x >= -r && y <= r / 2
+    const inSecondZone = inSecondQuarter && inRectangle
+
+
+    const inFourthQuarter = x >= 0 && y <= 0
+    const inTriangle = y >= 2 * x - r
+    const inFourthZone = inTriangle && inFourthQuarter
+
+    console.log(inFourthZone || inSecondZone || inThirdZone)
+
+    return inFourthZone || inSecondZone || inThirdZone
+}
+
 const canvas = document.getElementById("graph-canvas")
 const ctx = canvas.getContext("2d")
 
@@ -74,11 +93,13 @@ function fillGraph() {
     ctx.lineTo(width / 2 - 5, 5);
     ctx.lineTo(width / 2, 0);
     ctx.stroke();
+
+
     if (POINTS) {
         POINTS.forEach((point) => {
             ctx.beginPath();
 
-            ctx.fillStyle = (point.hit) ? "green" : "red";
+            ctx.fillStyle = (inZone(point.x,point.y, getR())) ? "green" : "red";
 
             const xStep = point.x * (width / 3) / getR();
             const yStep = -(point.y * (height / 3) / getR());
