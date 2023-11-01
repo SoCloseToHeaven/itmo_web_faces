@@ -4,6 +4,7 @@ import org.hibernate.Session
 import org.hibernate.SessionFactory
 import org.hibernate.cfg.Configuration
 import ru.ifmo.soclosetoheaven.model.ProcessedPoint
+import java.io.File
 
 object HibernateUtils {
 
@@ -17,7 +18,7 @@ object HibernateUtils {
     private fun configure() {
         try {
             val configuration = Configuration()
-                .configure("hibernate.cfg.xml")
+            configuration.configure(File(System.getenv("hibernateCFG")))
                 .addAnnotatedClass(ProcessedPoint::class.java)
             sessionFactory = configuration.buildSessionFactory()
         } catch (ex: Throwable) {

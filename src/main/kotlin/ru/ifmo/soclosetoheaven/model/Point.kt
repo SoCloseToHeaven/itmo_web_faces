@@ -40,10 +40,4 @@ class Point(
 
         pointManager.manage(processedPoint)
     }
-
-
-    fun xChangeListener(event: ValueChangeEvent) {
-        this.x = event.newValue as Double
-        System.out.println(event.newValue)
-    }
 }

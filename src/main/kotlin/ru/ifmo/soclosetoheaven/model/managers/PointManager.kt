@@ -1,10 +1,8 @@
 package ru.ifmo.soclosetoheaven.model.managers
 
 
-import jakarta.annotation.ManagedBean
 import jakarta.annotation.PostConstruct
 import jakarta.annotation.PreDestroy
-import jakarta.enterprise.context.ApplicationScoped
 import jakarta.enterprise.context.SessionScoped
 import jakarta.inject.Named
 import org.hibernate.Session
@@ -46,6 +44,7 @@ class PointManager : Manager<ProcessedPoint, Unit>, Serializable {
                 session.createQuery("SELECT a FROM POINTS a", ProcessedPoint::class.java).resultList
             )
         } catch (ex: Throwable) {
+            ex.printStackTrace()
         }
     }
 

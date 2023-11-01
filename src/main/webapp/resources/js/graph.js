@@ -133,14 +133,22 @@ function afterAttempt() {
 }
 
 canvas.addEventListener('mousedown', (ev) => {
+
+    const xElem = document.getElementById('point-form:x-number')
+    const yElem = document.getElementById('point-form:y')
     const r = getR();
 
     const x = Math.round((ev.offsetX / canvas.width - 0.5) * 3 * r * 100) / 100;
     const y = Math.round((ev.offsetY / canvas.height - 0.5) * -3 * r * 100) / 100;
 
-    document.getElementById('point-form:x-number').value = x.toString();
-    document.getElementById('point-form:y').value = y.toString();
-    console.log(document.getElementById('point-form:x-number').value);
-    console.log(document.getElementById('point-form:y').value);
+    const xOldValue = xElem.value
+    const yOldValue = yElem.value
+
+    xElem.value = x.toString();
+    yElem.value = y.toString();
+    // send form
     document.getElementById("point-form:send-button").click();
+    // return old values
+    xElem.value = xOldValue
+    yElem.value = yOldValue
 });
