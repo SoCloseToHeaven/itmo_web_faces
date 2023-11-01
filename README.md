@@ -1,4 +1,4 @@
-# Лабораторная работа #3
+# Лабораторная работа #3 (APPROVED 10/10)
 ## Вариант: 434334
 ## Индивидуальные требования: Kotlin + Bootstrap + PrimeFaces + AJAX
 ![Task graph](/static/areas.png)
